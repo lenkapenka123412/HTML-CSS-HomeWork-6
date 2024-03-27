@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    scroll-behavior: smooth;
+    background: rgb(255, 255, 255);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+p,
+a,
+button {
+    font-family: "Lato", sans-serif;
+    color: rgb(34, 34, 34)
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.header {
+    background: rgb(34, 34, 34);
+}
+
+.btn_nav {
+    background: none;
+    border: none;
+}
+
+.navigation {
+    background: rgb(34, 34, 34);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation_icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 33px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.mainContent_right {
+    border-left: 12px solid rgb(241, 109, 127);
+    padding: 0 16px;
+    font-size: 32px;
+    font-weight: 900;
+}
+
+.mainContent_right h1 {
+    font-size: 48px;
+    font-weight: 900;
+    font-family: Lato;
+}
+
+.mainContent_right h2 {
+    font-size: 32px;
+    font-weight: 700;
+    font-family: Lato;
+}
+
+span {
+    color: rgb(241, 109, 127);
+}
+
+.mainContent {
+    background: rgb(241, 228, 230);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    max-width: 1600px;
+}
+
+.cardlist {
+    margin-top: 65px;
+    margin-bottom: 96px;
+}
+
+.product_title {
+    text-align: center;
+    margin-bottom: 6px;
+}
+
+.product_title h2 {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+.product_title h3 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    color: rgb(159, 159, 159);
+    margin-bottom: 48px;
+}
+
+.card_background_line {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.card_background_big {
+    background: rgba(33, 22, 22, 0.7);
+    width: 1140px;
+    height: 180px;
+}
+
+.card_background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(33, 22, 22, 0.7);
+    width: 360px;
+    height: 260px;
+}
+
+.card_background_big {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(33, 22, 22, 0.7);
+    width: 1140px;
+    height: 180px;
+}
+
+.cardlist h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    align-items: center;
+}
+
+.cardlist h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(241, 109, 127);
+}
+
+.card_background_img1 {
+    background-image: url("./img/Layer43.png");
+    width: 360px;
+    height: 260px;
+}
+
+.card_background_img2 {
+    background-image: url("./img/Rectangle30.png");
+    width: 360px;
+    height: 260px;
+}
+
+.card_background_img3 {
+    background-image: url("./img/Rectangle31.png");
+    width: 360px;
+    height: 260px;
+}
+
+.card_background_img4 {
+    background-image: url("./img/Rectangle20.png");
+    width: 1140px;
+    height: 180px;
+}
+
+.card_background1 {
+    background: rgba(33, 22, 22, 0.7);
+    width: 1140px;
+    height: 180px;
+}
+
+.product_card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.card_title {
+    background: rgb(248, 248, 248);
+    padding: 24px;
+}
+
+.card_title h2 {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 16px;
+    margin-bottom: 12px;
+}
+
+.card_title p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+    color: rgb(93, 93, 93);
+    margin-bottom: 18px;
+}
+
+.product h3 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    color: rgb(241, 109, 127);
+}
+
+.product_btn {
+    border: 1px solid rgb(255, 106, 106);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    color: rgb(242, 99, 118);
+    padding: 15px 39px;
+    background: none;
+}
+
+.btn_position {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 48px;
+    margin-bottom: 60px;
+}
