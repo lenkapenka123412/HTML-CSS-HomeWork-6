@@ -44,6 +44,7 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: ;
 }
 
 .navigation_icon {
@@ -79,14 +80,18 @@ span {
 .mainContent {
     background: rgb(241, 228, 230);
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
-    max-width: 1600px;
+
 }
 
 .cardlist {
     margin-top: 65px;
     margin-bottom: 96px;
+}
+
+.card-title {
+    text-align: center;
 }
 
 .product_title {
@@ -111,8 +116,15 @@ span {
 .card_background_line {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 30px;
 }
+
+.card_background_line h3, h2 {
+    flex-direction: column;
+    align-items: center;
+}
+
 
 .card_background_big {
     background: rgba(33, 22, 22, 0.7);
@@ -243,6 +255,10 @@ span {
         gap: 33px;
     }
 
+    .navigation {
+        padding: 0 32px;
+    }
+
     .mainContent {
         justify-content: center;
     }
@@ -262,6 +278,7 @@ span {
     .card_background{
         width: 231px;
         height: 167px;
+        background-size: cover;
     }
 
     .card_background_img1 {
@@ -319,4 +336,79 @@ span {
         margin-top: 32px;
     }
 
+}
+
+@media ( max-width: 768px) {
+    .container {
+        max-width: 343px;
+    }
+
+    .btn_nav_icon {
+        display: none;
+    }
+
+    .navigation_icon {
+        padding: 18px 0;
+        gap: 41px;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 22px;
+    }
+
+    .mainContent img {
+        display: none;
+    }
+
+    .mainContent {
+        min-height: 363px;
+        padding: 52px;
+    }
+
+    .mainContent_right h1 {
+        font-size: 38px;
+    }
+
+    .mainContent_right h3 {
+        font-size: 20px;
+    }
+
+    .card_background_line {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .card_background_img4 {
+        background-position: center;
+        background-size: cover;
+        width: 343px;
+        height: 111px;
+    }
+
+    .card_background_big {
+        width: 343px;
+        height: 111px;
+    }
+
+    .card_background {
+        width: 343px;
+        height: 248px;
+    }
+
+    .background_img {
+        width: 343px;
+        height: 248px;
+    }
+
+    .product_card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
 }
