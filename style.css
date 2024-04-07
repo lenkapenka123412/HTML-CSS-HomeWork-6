@@ -30,6 +30,11 @@ button {
     margin: 0 auto;
 }
 
+.container_background {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
 .header {
     background: rgb(34, 34, 34);
 }
@@ -44,7 +49,6 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: ;
 }
 
 .navigation_icon {
@@ -54,6 +58,25 @@ button {
     gap: 33px;
     padding-top: 20px;
     padding-bottom: 20px;
+    position: relative;
+}
+
+.navigation_icon_shop span {
+    color: white;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+}
+.navigation_icon_shop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 7px;
+    border-radius: 25px;
+    background: rgb(241, 109, 127);
+    position: absolute;
+    top: 15px;
+    right: -10px;
 }
 
 .mainContent_right {
@@ -77,12 +100,86 @@ span {
     color: rgb(241, 109, 127);
 }
 
+
 .mainContent {
     background: rgb(241, 228, 230);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
+}
 
+.main_menu {
+    width: 232px;
+    height: 550px;
+    background-color: rgb(255, 255, 255);
+}
+.main_menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-shadow: 0px -5px 10px 0px rgba(160, 160, 160, 0.5)
+}
+
+.main_menu  h2 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    padding: 0 32px;
+    margin: 12px 0;
+}
+
+.main_menu_pink a {
+    color: rgb(241, 109, 127);
+}
+
+.main_menu h3 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    padding: 0 54px;
+    margin: 11px 0;
+}
+
+.main_menu_grey a {
+    color: rgb(138, 138, 138);
+}
+
+.main_menu h1 {
+    padding: 0 32px;
+    margin: 12px 0;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    color: rgb(0, 0, 0)
+}
+
+.mainContent_background {
+    display: flex;
+    align-items: center;
+}
+
+.main_menu a {
+    position: relative;
+    text-decoration: none;
+}
+
+.main_menu a:hover {
+    color: #000;
+}
+
+.main_menu a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(241, 109, 127);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.main_menu a:hover::before {
+    transform: scaleX(1);
 }
 
 .cardlist {
@@ -220,6 +317,46 @@ span {
     margin-bottom: 18px;
 }
 
+.product {
+    position: relative;
+}
+
+.product_img {
+    position: relative;
+}
+
+.product_dimming {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.product_dimming button a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 11px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 11px 13px;
+    border: 1px	solid rgb(255, 255, 255);
+    cursor: pointer;
+    text-align: center;
+}
+
+.product_img_hover:hover~.product_dimming {
+    display: flex;
+}
+
+
 .product h3 {
     font-size: 16px;
     font-weight: 400;
@@ -237,6 +374,13 @@ span {
     background: none;
 }
 
+.product_btn:hover {
+    border: 1px solid rgb(255, 106, 106);
+    background: rgb(241, 109, 127);
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+}
+
 .btn_position {
     display: flex;
     align-items: center;
@@ -245,10 +389,191 @@ span {
     margin-bottom: 60px;
 }
 
+.advantages {
+    background: rgb(34, 34, 36);
+}
+
+.block_advantages {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    gap: 30px;
+}
+
+.block_advantage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 104px 0;
+    text-align: center;
+}
+
+.block_advantage h2 {
+    color: rgb(251, 251, 251);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    padding-top: 28px;
+    padding-bottom: 16px;
+}
+
+.block_advantage p {
+    color: rgb(251, 251, 251);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+}
+
+.subscription {
+    background-image: url(./img/Layer41.png);
+    background-size: cover;
+}
+
+.background_linear-gradient {
+    background-image: url(./img/Rectangle26.png);
+    background-size: cover;
+}
+
+
+.background_lightening {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 223px;
+}
+
+.subscription_block {
+    max-width: 359px;
+    padding: 128px 0;
+}
+
+.subscription_block p {
+    padding: 30px;
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.subscription_block h2 {
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.subscription_block h3 {
+    font-size: 18px;
+    font-weight: 300;
+    padding-bottom: 32px;
+}
+
+form {
+    display: flex;
+  }
+
+/* Стилизация текстовых полей */
+input[type="email"] {
+    padding: 15px;
+    border: 1px solid #fff7f7;
+    border-radius: 20px 0 0 20px;
+  }
+  
+  input[type="button"] {
+    padding: 15px;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    background: rgb(241, 109, 127);
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 0 20px 20px 0;   
+  }
+  
+  /* Эффект при фокусе на текстовом поле */
+  input[type="email"]:focus {
+    border: 0.5px solid #cccccc;
+  }
+
+
+.footer_background {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.subscription_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navigation_footer {
+    background: rgb(34, 34, 34);
+}
+
+.footer_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.footer_copyright p {
+    color: white;
+    padding: 30px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+}
+
+.social_media {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 147px;
+    gap: 8px;
+
+}
+
+.social_media_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    width: 32px;
+    height: 32px;
+    border: none;
+}
+
+.social_media_btn:hover {
+    background: rgb(241, 109, 127);
+    transition: 0.3s;
+}
+
+.social_media_btn svg {
+    padding: 8px;
+}
+
+svg:hover path{
+    fill: aliceblue;
+    transition: 0.3s;
+}
+
+.icons_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 @media ( min-width: 769px) and (max-width: 1139px) {
 
     .container {
         max-width: 736px;
+    }
+
+    .container_background {
+        max-width: 769px;
     }
     
     .navigation_icon {
@@ -336,10 +661,40 @@ span {
         margin-top: 32px;
     }
 
+    .block_advantages {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        max-width: 360px;
+        padding-bottom: 22px;
+        padding: 48px 0;
+    }
+
+    .block_advantage {
+        padding: 0;
+    }
+
+    .background_lightening {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 48px;
+        padding: 48px 0;
+    }
+
+    .subscription_block {
+        padding: 0;
+        max-width: 557px;
+    }
+
 }
 
 @media ( max-width: 768px) {
     .container {
+        max-width: 343px;
+    }
+
+    .container_background {
         max-width: 343px;
     }
 
@@ -364,6 +719,9 @@ span {
     }
 
     .mainContent {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         min-height: 363px;
         padding: 52px;
     }
@@ -410,5 +768,47 @@ span {
         flex-direction: column;
         align-items: center;
         gap: 16px;
+    }
+
+    .block_advantages {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        max-width: 360px;
+        padding-bottom: 22px;
+        padding: 48px 0;
+    }
+
+    .block_advantage {
+        padding: 0;
+    }
+
+    .background_lightening {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 48px;
+        padding: 48px 0 64px 0;
+    }
+
+    .subscription_block {
+        padding: 0;
+        max-width: 341px;
+        text-align: center;
+    }
+
+    .footer_content {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .footer_content p {
+        padding: 0;
+        padding-bottom: 9px;
+    }
+
+    .social_media {
+        padding: 40px 0;
     }
 }
