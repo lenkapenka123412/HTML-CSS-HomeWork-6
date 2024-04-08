@@ -120,6 +120,10 @@ span {
     box-shadow: 0px -5px 10px 0px rgba(160, 160, 160, 0.5)
 }
 
+.hidden {
+    display: none;
+}
+
 .main_menu  h2 {
     font-size: 14px;
     font-weight: 400;
@@ -334,7 +338,8 @@ span {
     display: none;
 }
 
-.product_dimming button a {
+
+.product_dimming button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -352,7 +357,11 @@ span {
     border: 1px	solid rgb(255, 255, 255);
     cursor: pointer;
     text-align: center;
-}
+} 
+
+
+
+
 
 .product_img_hover:hover~.product_dimming {
     display: flex;
@@ -380,7 +389,6 @@ span {
     border: 1px solid rgb(255, 106, 106);
     background: rgb(241, 109, 127);
     color: rgb(255, 255, 255);
-    transition: 0.3s;
 }
 
 .btn_position {
@@ -537,7 +545,7 @@ input[type="email"] {
 
 }
 
-.social_media_btn {
+.social_media button{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -547,24 +555,18 @@ input[type="email"] {
     border: none;
 }
 
-.social_media_btn:hover {
+.social_media button:hover {
     background: rgb(241, 109, 127);
     transition: 0.3s;
 }
 
-.social_media_btn svg {
+.social_media svg {
     padding: 8px;
 }
 
 svg:hover path{
     fill: aliceblue;
     transition: 0.3s;
-}
-
-.icons_center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 
